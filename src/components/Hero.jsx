@@ -10,9 +10,10 @@ const Hero = ({ data }) => {
   };
 
   const handleDownloadResume = () => {
+    const googleDocsPdfUrl = 'https://docs.google.com/document/d/1yEn30d00RcFlh_esZ98BeNqg3KbU1osI8g4L6GDTAoI/edit?usp=sharing'
     // Create download link for the resume
     const link = document.createElement('a');
-    link.href = data.resumeUrl;
+    link.href = googleDocsPdfUrl;
     link.download = 'Athena_Anil_Resume.pdf';
     document.body.appendChild(link);
     link.click();
